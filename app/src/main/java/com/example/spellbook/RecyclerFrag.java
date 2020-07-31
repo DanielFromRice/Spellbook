@@ -13,7 +13,7 @@ import android.view.ViewGroup;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.List;
+import io.vavr.collection.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -28,9 +28,9 @@ public class RecyclerFrag extends Fragment {
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
     private RecyclerView recyclerView;
-    private String[] myDataset = {"Hello 123", "1234 who's the spell that we adore", "Supercalifragalisticexpialidocious"};
+//    private String[] myDataset = {"Hello 123", "1234 who's the spell that we adore", "Supercalifragalisticexpialidocious"};
 
-    private List<String> myData = new ArrayList<>();
+    private List<String> myData = List.of("Hello123", "Who's the one that we adore", "supercalifragilisticexpialidocious");
 
     // TODO: Rename and change types of parameters
 //    private String mParam1;
@@ -82,7 +82,7 @@ public class RecyclerFrag extends Fragment {
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(layoutManager);
 
-        RecyclerView.Adapter<MyAdapter.MyViewHolder> mAdapter = new MyAdapter(myDataset);
+        RecyclerView.Adapter<MyAdapter.MyViewHolder> mAdapter = new MyAdapter(myData);
         recyclerView.setAdapter(mAdapter);
     }
 }
