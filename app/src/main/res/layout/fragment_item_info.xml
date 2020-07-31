@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,30 +9,41 @@
     android:gravity="center_vertical"
     tools:context=".ItemInfo">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#C1F38686"
+        android:contentDescription="Sample Picture to look at"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/item"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_foreground"
+        tools:ignore="HardcodedText"
+        tools:srcCompat="@drawable/ic_launcher_foreground"
+        tools:visibility="visible" />
+
     <TextView
         android:id="@+id/item"
         android:layout_width="match_parent"
-        android:layout_height="72dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginRight="32dp"
-        android:gravity="center"
-        android:textAlignment="center"
-        android:text="@string/placeholder_text_here" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:srcCompat="@tools:sample/backgrounds/scenic"
-        android:contentDescription= "Sample Picture to look at"
-        tools:ignore="HardcodedText" />
-    <!--    <TextView-->
-<!--        android:id="@+id/item"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:text="@string/hello_blank_fragment" />-->
+        android:gravity="center"
+        android:text="@string/placeholder_text_here"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</FrameLayout>
+    <!--    <TextView-->
+    <!--        android:id="@+id/item"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:text="@string/hello_blank_fragment" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
 
 <!--<TextView xmlns:android="http://schemas.android.com/apk/res/android"-->
 <!--    android:id="@+id/item"-->

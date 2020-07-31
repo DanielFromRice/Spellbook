@@ -1,22 +1,24 @@
 package com.example.spellbook;
 
+import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import io.vavr.collection.List;
 
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder>{
     private String[] mDataset;
-    private List<String> mData = List.of("");
+    private List<String> mData;
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
-        public FrameLayout frameLayout;
-        public MyViewHolder(FrameLayout v){
+        public ConstraintLayout frameLayout;
+        public MyViewHolder(ConstraintLayout v){
             super(v);
             frameLayout = v;
         }
@@ -33,7 +35,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder>{
     @NonNull
     @Override
     public MyAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        FrameLayout v =(FrameLayout) LayoutInflater.from(parent.getContext()).inflate(R.layout.fragment_item_info, parent, false);
+        ConstraintLayout v =(ConstraintLayout) LayoutInflater.from(parent.getContext()).inflate(R.layout.fragment_item_info, parent, false);
 
         return new MyViewHolder(v);
     }
