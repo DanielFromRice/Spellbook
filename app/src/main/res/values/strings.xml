@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Spellbook</string>
     <string name="hello_blank_fragment">Placeholder Text here!!</string>
+    <string name="placeholder_text_here">Placeholder Text Here!!!</string>
 </resources>

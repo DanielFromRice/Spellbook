@@ -11,6 +11,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link RecyclerFrag#newInstance} factory method to
@@ -24,6 +28,8 @@ public class RecyclerFrag extends Fragment {
     private static final String ARG_PARAM2 = "param2";
     private RecyclerView recyclerView;
     private String[] myDataset = {"Hello 123", "1234 who's the spell that we adore", "Supercalifragalisticexpialidocious"};
+
+    private List<String> myData = new ArrayList<>();
 
     // TODO: Rename and change types of parameters
 //    private String mParam1;
