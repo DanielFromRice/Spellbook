@@ -30,7 +30,7 @@ public class RecyclerFrag extends Fragment {
     private RecyclerView recyclerView;
 //    private String[] myDataset = {"Hello 123", "1234 who's the spell that we adore", "Supercalifragalisticexpialidocious"};
 
-    private List<String> myData = List.of("Hello123", "Who's the one that we adore", "supercalifragilisticexpialidocious");
+    private List<String> myData = List.of("Hello123", "Who's the one that we adore", "supercalifrabridged", "Hydrogen Peroxide", "Supperman", "Illiterally", "Nope", "321goodbyE", "Goopy Goblet Goblin", "Commander Wharf", "Doppler Effect Fiddles Rome Burns", "Herp-Di-Derp-etology");
 
     // TODO: Rename and change types of parameters
 //    private String mParam1;
