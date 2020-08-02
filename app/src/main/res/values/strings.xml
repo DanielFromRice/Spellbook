@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">Spellbook</string>
     <string name="hello_blank_fragment">Placeholder Text here!!</string>
-    <string name="placeholder_text_here">Placeholder Text Here!!!</string>
+    <string name="spell_name_placeholder_text">Spell Name P-H</string>
+    <string name="spell_level_placeholder_text">Spell Lvl P-H</string>
+    <string name="spell_classes_placeholder_text">Caster Classes P-H</string>
+    <string name="spell_damage_placeholder_text">Spell Base Damage P-H</string>
+    <string name="spell_concentration_ritual_placeholder_text">C and/or R P-H</string>
 </resources>

@@ -1,9 +1,7 @@
 package com.example.spellbook;
 
-import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -42,7 +40,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder>{
 
     @Override
     public void onBindViewHolder(@NonNull MyAdapter.MyViewHolder holder, int position) {
-        TextView tv = holder.frameLayout.findViewById(R.id.item);
+        TextView tv = holder.frameLayout.findViewById(R.id.spellNameTextview);
         tv.setText(mData.get(position));
 //        holder.textView.setText(mData.get(position));
     }
